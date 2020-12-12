@@ -29,6 +29,7 @@
 		}
 
 	}
+    header("Content-Type: application/force-download");
 	header('Content-Type: application/csv');
 	header('Content-Disposition: attachment; filename=export.csv;');
 

@@ -36,12 +36,13 @@
 								 <option>Formularios y fichas</option>
 								 <option>Geometria y Dibujo</option>
 								 <option>Hojas</option>
-								 
+								 <option>Agendas</option>
 								 <option>Sobres</option>
 								 <option>Informatica</option>
 								 <option>Masas</option>
 								 <option>Recibos - Notas de Pedido</option>
 								 <option>Calculadora</option>
+								<option>Libros de cuentos</option>
 							</select>
 						</div>
 						<div class="form-group">
@@ -49,12 +50,16 @@
 							<input type="text" name="proveedor" id="proveedor" class="form-control">
 						</div>
 						<div class="form-group">
+						   <label>Precio (sin Iva)</label>
+						   <input type="text" name="siniva" id="siniva" class="form-control" placeholder="Solo sirve para calcular IVA" onkeyUp="calculariva();">
+						</div>	
+						<div class="form-group">		
 							<label>Precio Costo (Iva Incl)</label>
-							<input type="text" name="stock" id="stock" class="form-control">
+							<input type="text" name="stock" id="stock" class="form-control"  onkeyUp="calculartotal();">
 						</div>
 						<div class="form-group">
 							<label>Precio (Iva Incl)</label>
-							<input type="number" name="price" id="price" class="form-control" required>
+							<input type="number" name="price" id="price" class="form-control" required  >
 						</div>					
 					</div>
 					<div class="modal-footer">

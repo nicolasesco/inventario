@@ -97,3 +97,19 @@
 			});
 		  event.preventDefault();
 		});
+
+		
+		function calculariva() {
+			var iva = 22;
+			var monto = $("input[name=siniva]").val();
+			var precioConImpuestos = (1 + iva/100) * monto;
+			$("input[name=stock]").val(precioConImpuestos);
+		  
+		  }
+		  function calculartotal() {
+			var total = 65;
+			var montos = $("input[name=stock]").val();
+			var preciototal = (1 + total/100) * montos;
+			$("input[name=price]").val(preciototal);
+		  
+		  }
